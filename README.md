@@ -1,14 +1,27 @@
 # mqtt_test
 
-TODO: Write a description here
+mqtt concurrency test tool
 
 ## Installation
 
-TODO: Write installation instructions here
+```
+git clone https://github.com/Adek06/mqtt_test.git
+cd mqtt_test
+shards build
+./bin/mqtt_test
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+./bin/mqtt_test -h
+Usage: mqtt_test [arguments]
+    -c CLIENT_NUMBER, --client_number=CLIENT_NUMBER
+                                     Specifies the mqtt client number
+    -h HOST, --host=HOST             Specifies the mqtt broker host
+    -p PORT, --port=PORT             Specifies the mqtt broker port
+    -h, --help                       Show this help
+```
 
 ## Development
 
@@ -24,4 +37,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [adek06](https://github.com/your-github-user) - creator and maintainer
+- [adek06](https://github.com/adek06) - creator and maintainer

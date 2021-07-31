@@ -7,7 +7,7 @@ mqtt_port : Int32 = 1883
 clients_number : Int32 = 10
 
 OptionParser.parse do |parser|
-  parser.banner = "Usage: salute [arguments]"
+  parser.banner = "Usage: mqtt_test [arguments]"
   parser.on("-c CLIENT_NUMBER", "--client_number=CLIENT_NUMBER", "Specifies the mqtt client number") { |num| clients_number = num.to_i}
   parser.on("-h HOST", "--host=HOST", "Specifies the mqtt broker host") { |host| mqtt_host = host }
   parser.on("-p PORT", "--port=PORT", "Specifies the mqtt broker port") { |port| mqtt_port = port.to_i }
@@ -25,7 +25,6 @@ end
 
 clients = Array(MQTT::V3::Client).new
 clients_number.times do |i|
-  # transport = MQTT::Transport::TCP.new("f41ee402.cn-shenzhen.emqxcloud.cn", 15107)
   transport = MQTT::Transport::TCP.new(mqtt_host, mqtt_port)
   client = MQTT::V3::Client.new(transport)
   client.connect(username="emqx", password="public")
