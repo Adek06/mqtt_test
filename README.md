@@ -19,7 +19,10 @@ Usage: mqtt_test [arguments]
     -c CLIENT_NUMBER, --client_number=CLIENT_NUMBER
                                      Specifies the mqtt client number
     -h HOST, --host=HOST             Specifies the mqtt broker host
-    -p PORT, --port=PORT             Specifies the mqtt broker port
+    -P PORT, --port=PORT             Specifies the mqtt broker port
+    -p PASSWORD, --password=PASSWORD Specifies the mqtt client password
+    -u USERNAME, --username=USERNAME Specifies the mqtt client username
+    -t topic, --topic=TOPIC          Specifies the mqtt topic
     -h, --help                       Show this help
 ```
 
