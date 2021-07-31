@@ -1,0 +1,17 @@
+name: mqtt_test
+version: 0.1.0
+
+authors:
+  - adek06 <adek06@outlook.com>
+
+dependencies:
+  mqtt:
+    github: spider-gazelle/crystal-mqtt
+
+targets:
+  mqtt_test:
+    main: src/mqtt_test.cr
+
+crystal: 1.1.1
+
+license: MIT
